@@ -31,8 +31,10 @@ public class Monoposto extends Thread{
     
             if(i % 3 == 0){
                 semaforo.P();
+                semaforo.setPosti(semaforo.getPosti() + 1);
                 area.cambioGomme(pilota.getNome());
                 System.out.println("PIT-STOP " + pilota.getNome() + " FINITO");
+                semaforo.setPosti(semaforo.getPosti() - 1);
                 semaforo.V();
             }
         }

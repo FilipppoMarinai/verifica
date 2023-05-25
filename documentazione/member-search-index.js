@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"<Unnamed>","c":"Semaforo","l":"P()"},{"p":"<Unnamed>","c":"Semaforo","l":"Semaforo(int)","url":"%3Cinit%3E(int)"},{"p":"<Unnamed>","c":"Semaforo","l":"V()"}]
+memberSearchIndex = [{"p":"<Unnamed>","c":"Semaforo","l":"getPosti()"},{"p":"<Unnamed>","c":"Semaforo","l":"P()"},{"p":"<Unnamed>","c":"Semaforo","l":"Semaforo(int, int)","url":"%3Cinit%3E(int,int)"},{"p":"<Unnamed>","c":"Semaforo","l":"setPosti(int)"},{"p":"<Unnamed>","c":"Semaforo","l":"V()"}]

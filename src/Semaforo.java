@@ -6,20 +6,42 @@ public class Semaforo {
      * valore che avrà il semaforo
      */
     private int valore;
+    /**
+     * posti auto occupati al box
+     */
+    private int postiAuto;
 
     /**
      * costruttore del Semaforo
      * @param valore valore del semaforo
+     * @param postiAuto posti auto occupati al box
      */
-    public Semaforo(int valore){
+    public Semaforo(int valore, int postiAuto){
         this.valore = valore;
+        this.postiAuto = postiAuto;
+    }
+
+    /**
+     * setto i posti del box in base a quanti sono occupati
+     * @param posti posti disponibili al box
+     */
+    public void setPosti(int posti){
+        postiAuto = posti;
+    }
+
+    /**
+     * vado prendere i posti auto occupati
+     * @return posti auto occupati
+     */
+    public int getPosti(){
+        return postiAuto;
     }
 
     /**
      * guardo se la risorsa condivisa è libera oppure no, se non lo è metto in attesa il thread
      */
     public synchronized void P(){
-        while(valore == 0){
+        while(valore == 0 && postiAuto == 2){
             try{
                 System.out.println("--------" + Thread.currentThread().getName() + " in attesa al box---------");
                 wait();

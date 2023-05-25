@@ -1,5 +1,3 @@
-import java.nio.channels.SelectableChannel;
-
 public class Area {
     private String nome;
 
