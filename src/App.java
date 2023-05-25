@@ -18,7 +18,7 @@ public class App {
         m1.join();
         m2.join();
         m3.join();
-        
+
         System.out.println("Gara Finita");
     }
 }

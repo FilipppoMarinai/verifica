@@ -9,7 +9,7 @@ public class Semaforo {
 
     /**
      * costruttore del Semaforo
-     * @param valore valore del semaforo
+     * @param valore valore del semaforoclear
      */
     public Semaforo(int valore){
         this.valore = valore;
